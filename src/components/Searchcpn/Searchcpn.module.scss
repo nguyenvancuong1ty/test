@@ -1,0 +1,88 @@
+.input {
+    outline: none;
+    display: flex;
+    flex: 1;
+    font-size: 16px;
+    caret-color: red;
+
+    &:not(:placeholder-shown) ~ .icon-search {
+        color: rgba(22, 24, 35, 0.75);
+    }
+}
+
+.search {
+    width: 360px;
+    height: 46px;
+    display: flex;
+    background: rgba(22, 24, 35, 0.06);
+    border-radius: 25px;
+    padding-left: 18px;
+    position: relative;
+    border: 1px solid transparent;
+    .icon-remove {
+        position: absolute;
+        height: 100%;
+        right: 70px;
+        top: 1px;
+        font-size: 16px;
+        color: #a7a7ab;
+        cursor: pointer;
+    }
+
+    .icon-loadding {
+        position: absolute;
+        height: 100%;
+        right: 70px;
+        top: 1px;
+        color: #a7a7ab;
+        font-size: 16px;
+        animation: spinner 1.4s linear infinite;
+    }
+
+    &:focus-within {
+        border: 1px solid #ccc;
+    }
+}
+
+.icon-search {
+    display: flex;
+    width: 52px;
+    align-items: center;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: 20px;
+    color: rgba(22, 24, 35, 0.34);
+    &::before {
+        content: '';
+        height: 24px;
+        width: 1.8px;
+        display: block;
+        background-color: rgba(22, 24, 35, 0.12);
+        z-index: 999;
+        margin-right: 16px;
+    }
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.12);
+        cursor: pointer;
+    }
+
+    &:active {
+        background-color: rgba(22, 24, 35, 0.06);
+    }
+}
+
+.search-poper {
+    width: 360px;
+    height: 400px;
+}
+
+
+@keyframes spinner {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

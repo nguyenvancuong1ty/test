@@ -1,0 +1,51 @@
+.wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    span {
+        display: flex;
+        margin-right: 8px;
+    }
+}
+
+.primary {
+    border-radius: 4px;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(254, 44, 85, 1);
+    min-width: 106px;
+    min-height: 28px;
+    max-height: 44px;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 600;
+    font-family: sans-serif;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 8px;
+    cursor: pointer;
+}
+
+.large {
+    width: 100%;
+    background-color: transparent;
+    cursor: pointer;
+    min-height: 40px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.foreignClass {
+    max-height: 38px;
+}
+
+.active {
+    color: red;
+}
+
+.marginAuto {
+    margin-left: auto;
+}

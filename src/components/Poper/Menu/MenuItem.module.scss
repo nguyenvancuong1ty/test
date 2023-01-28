@@ -1,0 +1,35 @@
+.item {
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 0;
+    padding: 11px 16px;
+    line-height: 1.8rem;
+    font-weight: 600;
+    display: flex;
+    font-size: 15px;
+    cursor: pointer;
+
+    h4 {
+        margin-left: 8px;
+    }
+
+    span {
+        min-width: 24px;
+        text-align: left;
+    }
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.06);
+    }
+}
+
+.menu-title {
+    span {
+        padding: 0 32px 0 8px;
+    }
+}
+
+.menu-text {
+    display: inline-block;
+}

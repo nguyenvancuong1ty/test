@@ -1,0 +1,48 @@
+.item {
+    display: flex;
+    align-items: center;
+    padding: 6px 16px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(22, 24, 35, .06);
+        cursor: pointer;
+    }
+}
+
+.img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info {
+    flex: 1;
+    margin-left: 12px;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.desp {
+    font-size: 1.4rem;
+    color: rgba(22, 24, 35, 0.5);
+}
+
+.icon {
+    color: rgba(32, 213, 236, 1);
+    margin-left: 6px;
+    font-size: 14px;
+}
+
+.noImg {
+    position: relative;
+    background: url(https://st4.depositphotos.com/14953852/24787/v/600/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpgg) no-repeat center center; // or simple background color
+    height: 100%;
+    width: 100%;
+    content: "Your content";
+    margin: 0 10px 10px 0;
+  }

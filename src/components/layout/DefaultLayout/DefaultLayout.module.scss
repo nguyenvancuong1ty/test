@@ -1,0 +1,30 @@
+:root {
+    --marginTop: 60px;
+}
+
+.header {
+    width: 100vw;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    width: 1150px;
+    // min-height: 1000px;
+    margin: var(--marginTop) auto 0 auto;
+}
+
+.content {
+    flex: 1;
+    background: #fff;
+    text-align: left;
+    height: calc(100vh - var(--marginTop));
+    // overflow: scroll;
+    // overflow: hidden;
+}
+
+@media (max-width: 740px) {
+    .side_bar {
+        display: none;
+    }
+}

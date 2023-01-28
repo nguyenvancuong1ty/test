@@ -1,0 +1,60 @@
+.sidebar {
+    width: 356px;
+    height: calc(100vh - 60px);
+    color: white;
+    text-align: center;
+    overflow-x: auto;
+    padding: 20px 0 26px 16px;
+
+    &:hover::-webkit-scrollbar {
+        display: unset;
+    }
+}
+::-webkit-scrollbar {
+    display: none;
+    transition: 0.5s;
+    width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #c5b1b1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(133, 120, 120);
+}
+
+.content {
+    height: 2000px;
+
+    .header {
+        border-bottom: 1px solid rgb(240 240 241);
+
+        .item {
+            padding: 4px 8px;
+            border-radius: 8px;
+        }
+
+        .item:hover {
+            background-color: rgba(22, 24, 35, 0.03);
+        }
+    }
+}
+
+.suggested {
+    color: black;
+    text-align: left;
+
+    h5 {
+        padding: 0 8px;
+        margin: 12px 0;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+        color: rgba(22, 24, 35, 0.75);
+    }
+}
+
+
